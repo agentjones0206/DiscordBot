@@ -5,11 +5,9 @@ from requests.auth import HTTPBasicAuth
 import discord
 
 def stat(nik):
-    auth = '02a3650e-85b0-499c-a065-822e547812e1'
+    auth = 
     api = fortnite_api.FortniteAPI(api_key=auth)
-    #url = 'https://fortnite-api.com/v2/stats/br/v2'
-
-    #name = 'e-lectrica'
+        
     name = nik
     try:
         output = api.stats.fetch_by_name(name=name)
